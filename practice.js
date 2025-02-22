@@ -6,3 +6,9 @@
 
 // write a code which output prime number in interval for 2 to n
 // n should not be hard-tuned to any fixed value
+
+for (n = 2; n < 1 ; n++){
+  if ( n % 2 == 0) continue ;
+}
+
+console.log(n);
