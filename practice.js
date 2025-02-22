@@ -1,7 +1,8 @@
-let num;
+// create a loop to output prime numbers
+// return integer great than 1 that can't be devided without a remainder or anything execpt for 1
 
-do {
-  num = prompt("Enter a number greater than 100", 0);
-} while (num <= 100 && num);
 
-console.log(num);
+// n > 1 is a prime
+
+// write a code which output prime number in interval for 2 to n
+// n should not be hard-tuned to any fixed value
