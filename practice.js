@@ -1,32 +1,7 @@
-// write a loop with a prompt
-/* for (i=0;i<100>;i++){
-  let input = prompt("Guess a big number", '');
-  if (i<100){
-    input;
-  } else if (i > 100){
-    alert(i);
-   }
-   if (!input){ 
-    break;
-  } 
-  }
+let num;
 
-console.log(i); */
-// write the prompt for a number great than a 100
-// if < 100, ask the input again
-// the loop continues until visitor enters >100
-// the loop continues until visitor cancels or enters an empty line
+do {
+  num = prompt("Enter a number greater than 100", 0);
+} while (num <= 100 && num);
 
-let i = 0;
-
-while (i<100){
-  let input = prompt("Guess a big number", '');
-  if (i >= 100){
-    alert (i);
-  } else if (!input){ 
-    break;
- } else if (i >= 100)
-  alert (i);
-} 
-
-console.log(i);
+console.log(num);
