@@ -1,9 +1,15 @@
-outer: for (let i = 0; i < 3; i++){
-    for (let j = 0; j < 3; j++){
-      let input = prompt(`Value at coords (${i},${j})`, '');
-
-      if (!input) break outer;
-    }
+// write a loop with a prompt
+for (i=0;i<500;i++){
+  let input = prompt("Guess a big number", '');
+  if (i<100){
+    input;
+    if (!value) break;
+  } else if (i > 100){
+    alert(i);
+  }
 }
-
-alert ('Done!');
+console.log(i);
+// write the prompt for a number great than a 100
+// if < 100, ask the input again
+// the loop continues until visitor enters >100
+// the loop continues until visitor cancels or enters an empty line
