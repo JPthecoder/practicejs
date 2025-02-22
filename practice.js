@@ -1,5 +1,7 @@
-for (let i = 0; i < 10; i++){
-  if (i % 2 == 0) continue;
-  alert(i);
-  console.log(i);
+for (let i = 0; i < 3; i++){
+    for (let j = 0; j < 3; j++){
+      let input = prompt(`Value at coords (${i},${j})`, '');
+    }
 }
+
+alert ('Done!');
