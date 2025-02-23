@@ -7,8 +7,12 @@
 // write a code which output prime number in interval for 2 to n
 // n should not be hard-tuned to any fixed value
 
-for (n = 2; n < 1 ; n++){
-  if ( n % 2 == 0) continue ;
-}
+let n = 10;
 
-console.log(n);
+loopy:
+  for (i = 2; i <= n; i++){
+    for (let j = 2; j < i; j++){
+      if (i % 2 == 0) continue loopy;
+    }
+      alert (i);
+  }
