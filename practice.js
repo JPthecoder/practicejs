@@ -1,12 +1,12 @@
-const repeatString = function() {
+const repeatString = function(string, num) {
   // arguments string and num
-  let string = 'hey';
-  let num = 0;
 
-  for (i = 0; i <3; i++){
-  if (num++){
-    return string += `${string}`;
+  let repeatStr = "";
+  while (num > 0){
+    repeatStr += string;
+    num--;
   }
+  return repeatStr;
 
   /* if (num == 1){
       return `${string}`;
@@ -19,6 +19,6 @@ const repeatString = function() {
 return string += `${string}`; // testing this to see how I can add more than 2 string together
 */
     }
-};
 
-console.log(repeatString());
+
+console.log(repeatString("hey", 3));
