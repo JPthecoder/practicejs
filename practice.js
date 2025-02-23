@@ -1,12 +1,12 @@
-const repeatString = function(string, num) {
-  // arguments string and num
-
-  let repeatStr = "";
-  while (num > 0){
-    repeatStr += string;
-    num--;
+const repeatString = function (string,num){
+   
+  let returnStr = "";
+  while (num < 1){
+      returnStr += string;
+      num--;
   }
-  return repeatStr;
+      return returnStr;
+  
 
   /* if (num == 1){
       return `${string}`;
@@ -21,4 +21,4 @@ return string += `${string}`; // testing this to see how I can add more than 2 s
     }
 
 
-console.log(repeatString("hey", 3));
+console.log(repeatString("hi", 1));
