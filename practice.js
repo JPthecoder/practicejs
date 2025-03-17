@@ -88,20 +88,23 @@ const sumAll = function(x,y) {
 
 console.log(sumAll(2,4)); */
 
-const sumAll = function(x,y) {
-  let add = 0;
-  if(x<y){
-  for (i=x; i <= y; i++){
-      add += x++;
-   }
-  } else if (y<x){
-      for (i=x; i>=y; i--){
-          add += x;
-          x--;
-      }
-  }
-  return add;
-}
- 
-  console.log(sumAll(2,4));
-  console.log(sumAll(123,1));
+/*
+  const sumAll = function(x,y) {
+    let add = 0;
+    if (x < 0 || y <0){
+        return "ERROR";
+    } else if (!Number.isInteger(x) || !Number.isInteger(y)){
+        return "ERROR";
+    } else if (Number.isNaN(x) || Number.isNaN(y)){
+        return "ERROR";
+    } else if (x > y){
+        for (i=x; i>=y; i--){
+            add += x--;
+        }
+    } else if (x<y){
+        for (i=x; i <= y; i++){
+            add += x++;
+         }
+    }
+        return add;
+        */
