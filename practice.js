@@ -1,110 +1,46 @@
-/* function reverseString(){
-  const message = "hello";
-  let newWord = message.split("");
-  newWord.reverse();
-  let word = newWord.join("");
-  console.log(word);
-}
+const container = document.querySelector("#container");
+//reference the container existing in our html file
+const content = document.createElement("content");
+//create a new div stored into a variable called content
+content.classList.add("content");
+content.textContent = "This is the way";
+//add class and text to the content
 
-  console.log(reverseString());
-  reverseString();
-*/
-/* const reverseString = function(string) {
-  let newWord = string.split("");
-  console.log(newWord);
-  newWord.reverse();
-  let reverseWord = newWord.join("");
-  console.log(reverseWord);
-};
-
-reverseString("hello"); */
-/* 
-const myArray = ([1,2,3,4] , 3);
-
-const removeFromArray = function(array, item) {
-  let newArray = [... array]
-  const index = newArray.findIndex((element) => element === item);
-  if (index !== -1){
-    newArray.splice(index, 1);
-      return newArray;
-  } 
-}; */
-/*
-// this is good to remove one value. we need to see how to remove multiple.
-const removeFromArray = function (arr, ...itemRe){
-  //,,, I'm using a space parater which is condensing all of the variables in parameter 2 in an array
-  // do I need to declare a new variable and make a spread operator?
-  // lets loop through the array
-  let newArray = arr.filter((element) => element == itemRe);
-    return newArray;
-
-  // arr = [1,2,3,4]
-  // itemRe = 3,2
-};
-console.log(removeFromArray([1,2,3,4], 3,2));
-
-// itemRe is the second parameter passed to the fuction upon calling
-// array[i] is referring to the index in the array
-// in this case, I want arr[i] to equal itemRe but that won't be the case because
-// itemRe is now an Array
-// Questions is, how do we go through every itemRe to compare it to arr[i]?
-/*
-for (i=0; i<arr.length;i++){
-  if (arr[i] === itemRe){
-    arr.splice(i, 1);
-  }
-}
-return arr; */
-
-/* const sumAll = function(x,y) {
-  let add = 0;
-  for (i=x; i <= y; i++){
-    add += x++; 
-  }
-  return add;
-};
+container.appendChild(content);
+//append this div to the container
 
 
-const sumAll = function(x,y) {
-  let results = 0;
-  if (x > y){
-  for (i=x; i <= y; i++){
-      results += x++;
-  }
-} else if ( x < y){ 
-  for (i=y; i <= x; i++){
-    results += x++;
-  }
-} else if (x < 0 || y < 0){
-  return "Error"
-} else if (!x.isInteger || !y.isInteger){
-  return "Error"
-} else if (isNan(x,y)){
-  return "Error"
-} 
-  return results;
-};
+const para = document.createElement("p");
+para.classList.add("red");
+para.textContent = "Hey I'm red!";
+para.style.color = "red";
 
+container.appendChild(para);
 
-console.log(sumAll(2,4)); */
+const header = document.createElement
+("h3");
 
-/*
-  const sumAll = function(x,y) {
-    let add = 0;
-    if (x < 0 || y <0){
-        return "ERROR";
-    } else if (!Number.isInteger(x) || !Number.isInteger(y)){
-        return "ERROR";
-    } else if (Number.isNaN(x) || Number.isNaN(y)){
-        return "ERROR";
-    } else if (x > y){
-        for (i=x; i>=y; i--){
-            add += x--;
-        }
-    } else if (x<y){
-        for (i=x; i <= y; i++){
-            add += x++;
-         }
-    }
-        return add;
-        */
+header.classList.add("h3");
+header.textContent = "I'm a blue h3";
+header.style.color = "blue";
+
+container.appendChild(header);
+
+const newDiv = document.createElement("div");
+newDiv.classList.add("nD");
+newDiv.style.border = '2px solid black';
+newDiv.style.backgroundColor = "pink";
+
+container.appendChild(newDiv);
+
+const header1 = document.createElement("h1");
+header1.classList.add("h1");
+header1.textContent = "I'm a div!";
+
+newDiv.appendChild(header1);
+
+const para1 = document.createElement("p");
+para1.classList.add("para1");
+para1.textContent = "ME TOO!";
+
+newDiv.appendChild(para1);
