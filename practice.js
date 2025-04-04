@@ -44,3 +44,20 @@ para1.classList.add("para1");
 para1.textContent = "ME TOO!";
 
 newDiv.appendChild(para1);
+
+function alertMe(){
+  alert("skrt skrt");
+}
+
+const skrt = document.querySelector("#skrt");
+
+skrt.addEventListener("click", alertMe);
+
+skrt.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+
+skrt.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
+
